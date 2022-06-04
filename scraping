@@ -1,0 +1,4 @@
+def tips_symmetric_difference(p, q):
+  _p, _q = set(p), set(q)
+  return [item for item in p if item not in _q] + [item for item in q if item not in _p]
+print(tips_symmetric_difference([2, 4, 6], [2, 4, 8]))
